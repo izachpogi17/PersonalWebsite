@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 20px 0px;
+}
+
+.navbarl ul li {
+  font-family: century;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 25px;
+  transition: all 0.5s ease;
+}
+.navbar ul li a:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 10px white;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 840px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url("akotoh2.jpg") no-repeat center/cover;
+  height: 900px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.headings {
+  font-family: "Oswald";
+  font-size: 3rem;
+  text-align: center;
+  margin: 40px 0px;
+}
+
+.btn {
+  font-family: "Oswald";
+  font-size: 1rem;
+  padding: 10px 35px;
+  background: linear-gradient(#ff0078, #f6efa7);
+  border: 2px solid black;
+  color: black;
+  outline: none;
+  transition: 0.6s ease;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.btn1 {
+  font-family: "Oswald";
+  font-size: 1rem;
+  padding: 2px 15px;
+  background: linear-gradient(#0c7bb3, #f2bae8);
+  border: 2px solid black;
+  color: black;
+  outline: none;
+  transition: 0.6s ease;
+  font-weight: bold;
+}
+.btn1:hover {
+  cursor: pointer;
+  background: linear-gradient(#50d5b7, #067d68);
+  color: black;
+  box-shadow: 0 0 5px black, 0 0 15px black;
+  font-weight: bold;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: linear-gradient(#e5aac3, #9a52c7);
+  color: black;
+  box-shadow: 0 0 5px black, 0 0 15px black;
+  font-weight: bold;
+}
+
+#About {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: #000000;
+  padding: 20px;
+  margin-bottom: 10px;
+  font-family: "Oswald";
+  color: white;
+}
+
+#pic {
+  display: flex;
+}
+#pic img {
+  width: 575px;
+  height: 400px;
+}
+
+#intro {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 50px;
+  font-family: "Oswald";
+}
+#intro h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#hobbies {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.gallery img {
+  width: 360px;
+  height: 240px;
+  margin: 10px;
+}
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #000000;
+  font-family: "Oswald";
+  color: white;
+}
+.row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 450px;
+  border: 1px solid black;
+  margin: 10px;
+  align-items: center;
+  text-align: justify;
+  padding: 10px;
+  border-radius: 15px;
+  background: linear-gradient(to top, #020024, #00d4ff);
+  background-size: 100% 200%;
+  transition: all 0.8s;
+  font-family: century;
+}
+.box:hover {
+  background-position: left bottom;
+  color: white;
+  border: none;
+  box-shadow: black;
+}
+
+#contactinfo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 12vh;
+  background-color: #ef96c5;
+  font-family: "Oswald";
+  color: #000000;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: black;
+  background: skyblue;
+  margin: 0.3rem;
+  padding: 0.5rem;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.contact-info-upper-container img {
+  width: 30px;
+  height: 30px;
+}
